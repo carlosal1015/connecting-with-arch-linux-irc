@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   ARCH LINUX / AUR DESIGN SYSTEM
+   Based on @aurweb/static/css/
+
+   Primary:   #1794D1  Arch Blue
+   Dark:      #333333  Arch Dark
+   Light:     #f6f9fc  Arch Light BG
+   Border:    #bcd     Arch Border
+   Box:       #ecf2f5  Arch Box BG
+───────────────────────────────────────────────────────────────────────────── */
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --color-bg-deep:    #f6f9fc;
+    --color-bg-darker:  #ffffff;
+    --color-bg-darkest: #e4eeff;
+
+    /* Arch brand colors */
+    --color-primary:      #1794D1;
+    --color-primary-alt:  #08c;
+    --color-primary-dark: #0077bb;
+    --color-slate:        #333333;
+    --color-gray:         #666666;
+    --color-arch-border:  #bcd;
+    --color-arch-box:     #ecf2f5;
+
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body:    'Inter', sans-serif;
+    --font-mono:    'JetBrains Mono', monospace;
+  }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--color-bg-deep);
+    font-family: var(--font-body);
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.4;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-slate);
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #eee; }
+  ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-primary); }
+}
+
+@layer utilities {
+  /* gradient-text: Arch Blue → Alt gradient */
+  .gradient-text {
+    background: linear-gradient(135deg, #1794D1 0%, #08c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* glass: Arch-style semi-transparent card */
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--color-arch-border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--color-arch-border);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Arch Box Utility */
+  .arch-box {
+    background: var(--color-arch-box);
+    border: 1px solid var(--color-arch-border);
+    padding: 0.65em;
+  }
+
+  /* Arch-derived card color utilities */
+  .card-arch  { 
+    background: #ffffff; 
+    border: 1px solid var(--color-arch-border); 
+    border-top: 3px solid var(--color-primary);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .card-cyan  { background: #ecf2f5; border: 1px solid #bcd; border-top: 3px solid #1794D1; border-radius: 4px; }
+  .card-blue  { background: #e4eeff; border: 1px solid #99c; border-top: 3px solid #08c; border-radius: 4px; }
+  .card-slate { background: #eee;    border: 1px solid #ccc; border-top: 3px solid #333; border-radius: 4px; }
+
+  .font-heading { font-family: var(--font-heading); }
+  .font-body    { font-family: var(--font-body); }
+  .font-mono    { font-family: var(--font-mono); }
+
+  /* pulse-glow: subtle breathing for Arch accents */
+  .pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+  /* float-orb: slow drift for subtle background shapes */
+  .float-orb  { animation: mesh-float 25s ease-in-out infinite; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 0.7; transform: scale(1.02); }
+}
+
+@keyframes mesh-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(30px, -50px) scale(1.05); }
+  66%       { transform: translate(-20px, 30px) scale(0.95); }
+}
