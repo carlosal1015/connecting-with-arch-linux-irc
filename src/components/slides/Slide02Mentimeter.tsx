@@ -42,8 +42,11 @@ export default function Slide02Mentimeter() {
           Conociendo a la <span className="gradient-text">Audiencia</span>
         </motion.h2>
 
-        <motion.p variants={fadeIn} className="text-xl mb-8" style={{ color: 'rgba(51,51,51,0.7)' }}>
-          Ingresen a Mentimeter para responder unas breves preguntas antes de iniciar:
+        <motion.p variants={fadeIn} className="text-xl mb-8 flex items-center gap-2" style={{ color: 'rgba(51,51,51,0.7)' }}>
+          Ingresen a Mentimeter para responder unas breves preguntas: 
+          <a href="https://www.menti.com/alk7xq21kryx" target="_blank" rel="noreferrer" className="text-[#1794D1] font-bold hover:underline bg-[#1794D1]/10 px-3 py-1 rounded">
+            menti.com/alk7xq21kryx
+          </a>
         </motion.p>
 
         <motion.div variants={stagger} className="flex flex-col gap-4">

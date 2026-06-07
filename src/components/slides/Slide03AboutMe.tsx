@@ -36,8 +36,9 @@ export default function Slide03AboutMe() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-[#333] mb-1" style={{ fontFamily: 'Outfit, sans-serif' }}>Carlos Aznarán</h3>
-                <p className="text-[#1794D1] font-semibold mb-2">Matemático (UNI, Perú)</p>
+                <p className="text-[#1794D1] font-semibold mb-2">Entusiasta FOSS</p>
                 <ul className="text-sm space-y-1" style={{ color: 'rgba(51,51,51,0.7)' }}>
+                  <li>• Matemático, Universidad Nacional de Ingeniería, Lima, Perú</li>
                   <li>• Mantenedor activo en AUR</li>
                   <li>• Colaborador de arch4edu</li>
                 </ul>
@@ -50,7 +51,7 @@ export default function Slide03AboutMe() {
               <Card variant="cyan" padding="p-6">
                 <h4 className="font-bold text-[#333] mb-2">Charla Anterior</h4>
                 <p className="text-sm mb-3" style={{ color: 'rgba(51,51,51,0.7)' }}>
-                  ¿Te interesa empezar en AUR? Puedes revisar mi charla anterior: <strong>Becoming AUR Maintainer</strong>.
+                  ¿Te interesa empezar en AUR? Puedes revisar mi charla anterior: <strong>Becoming AUR Maintainer</strong> (FLISoL 2026).
                 </p>
                 <a href="https://carlosal1015.github.io/becoming-aur-maintainer" target="_blank" rel="noreferrer" className="text-xs font-bold uppercase tracking-wider text-[#1794D1] hover:underline">
                   Ver Diapositivas →

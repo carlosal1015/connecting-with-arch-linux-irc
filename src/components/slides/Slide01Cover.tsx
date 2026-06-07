@@ -11,20 +11,12 @@ const pillars = [
   {
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
       </svg>
     ),
-    label: 'Filosofía KISS',
-    desc: 'Elegancia técnica',
-  },
-  {
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-      </svg>
-    ),
-    label: 'Seguridad',
-    desc: 'Aislamiento Chroot',
+    label: 'Arch Wiki',
+    desc: 'Documentar y traducir',
   },
   {
     icon: (
@@ -33,8 +25,29 @@ const pillars = [
         <path d="M8 21h8M12 17v4" />
       </svg>
     ),
-    label: 'PKGBUILD',
-    desc: 'Bash scripting',
+    label: 'AUR',
+    desc: 'Empaquetar software',
+  },
+  {
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+        <polyline points="22 4 12 14.01 9 11.01" />
+      </svg>
+    ),
+    label: 'Testing Team',
+    desc: 'Testear actualizaciones',
+  },
+  {
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+      </svg>
+    ),
+    label: 'Infraestructura',
+    desc: 'Mirrors y repos (arch4edu)',
   },
 ]
 
@@ -113,11 +126,11 @@ export default function Slide01Cover() {
             letterSpacing: '0.01em',
           }}
         >
-          Contribuciones en Arch Linux y colaboración vía IRC
+          Contribuciones en Arch Linux y colaboración vía Internet Relay Chat
         </motion.p>
 
         {/* Pillar cards */}
-        <motion.div variants={stagger} className="grid grid-cols-3 gap-4 mb-14 w-full max-w-[650px]">
+        <motion.div variants={stagger} className="grid grid-cols-4 gap-4 mb-14 w-full max-w-[850px]">
           {pillars.map(p => (
             <motion.div
               key={p.label}
