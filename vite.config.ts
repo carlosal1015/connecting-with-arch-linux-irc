@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/becoming-aur-maintainer/',
+  base: '/connecting-with-arch-linux-irc/',
   plugins: [
     tailwindcss(),
     react(),
