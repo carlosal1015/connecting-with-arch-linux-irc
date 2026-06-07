@@ -1,8 +1,8 @@
-# Becoming AUR Maintainer
+# Conectándose a la comunidad FOSS
 
 A React + Vite slide presentation template with dark theme, smooth animations, keyboard navigation, and one-click PDF export.
 
-**Live demo:** https://carlosal1015.github.io/becoming-aur-maintainer/
+**Live demo:** https://carlosal1015.github.io/connecting-with-arch-linux-irc/
 
 > For the full design system reference — colors, tokens, components, animation variants, and composition recipes — see [`DESIGN_SYSTEM.md`](./DESIGN_SYSTEM.md).
 
@@ -10,7 +10,7 @@ A React + Vite slide presentation template with dark theme, smooth animations, k
 
 ## Table of Contents
 
-- [Becoming AUR Maintainer](#becoming-aur-maintainer)
+- [Conectándose a la comunidad FOSS](#conectandose-a-la-comunidad-foss)
   - [Table of Contents](#table-of-contents)
   - [Quick Start](#quick-start)
     - [Build for production](#build-for-production)
@@ -61,7 +61,7 @@ npm run preview
 ## Project Structure
 
 ```
-becoming-aur-maintainer/
+connecting-with-arch-linux-irc/
 │
 ├── index.html                  # Entry point — change <title> here
 ├── vite.config.ts

@@ -88,7 +88,7 @@ export default function Slide01Cover() {
             }}
           >
             <span className="w-2 h-2 rounded-full pulse-glow" style={{ background: '#00BFFF' }} />
-            FLISoL 2026 @ Lima UTEC
+            Dev Rush Encuentro interuniversitario
           </span>
         </motion.div>
 
@@ -98,9 +98,9 @@ export default function Slide01Cover() {
           className="font-black text-[72px] text-[#333] mb-4 leading-tight"
           style={{ fontFamily: 'Outfit, sans-serif', letterSpacing: '-0.025em', lineHeight: 1.04 }}
         >
-          Empaquetado en
+          Conectándose a la
           <br />
-          <span className="gradient-text text-[60px]">Arch User Repository</span>
+          <span className="gradient-text text-[50px]">comunidad FOSS</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -113,7 +113,7 @@ export default function Slide01Cover() {
             letterSpacing: '0.01em',
           }}
         >
-          De usuario a contribuidor de Arch Linux
+          Contribuciones en Arch Linux y colaboración vía IRC
         </motion.p>
 
         {/* Pillar cards */}
@@ -181,7 +181,7 @@ export default function Slide01Cover() {
           }}
         >
           <span className="w-1.5 h-1.5 rounded-sm bg-[#1794D1]" />
-          RELEASE_DATE: 2026-05-02
+          RELEASE_DATE: 2026-06-05
         </motion.div>
       </motion.div>
     </div>

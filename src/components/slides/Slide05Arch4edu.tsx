@@ -23,7 +23,7 @@ const socialLinks = [
   { label: 'IRC', href: 'ircs://irc.libera.chat:6697/#arch4edu-general', value: '#arch4edu-general' },
 ]
 
-export default function Slide03cArch4edu() {
+export default function Slide05Arch4edu() {
   return (
     <div className="absolute inset-0 flex items-center justify-center px-20 py-10">
       <GlowOrb color="blue" size="lg" opacity={0.05} style={{ top: '-10%', right: '-5%' }} />
@@ -36,7 +36,7 @@ export default function Slide03cArch4edu() {
         animate="visible"
       >
         <motion.div variants={fadeIn}>
-          <Tag>02f · Ecosistema Global</Tag>
+          <Tag>04 · Ecosistema Global</Tag>
         </motion.div>
 
         <motion.h2

@@ -60,7 +60,7 @@ const links = [
   },
 ]
 
-export default function Slide10Closing() {
+export default function Slide08Closing() {
   return (
     <div className="absolute inset-0 flex items-center justify-center px-20 py-12">
       <GlowOrb color="cyan" size="lg" opacity={0.09} style={{ top: '-10%', left: '-5%' }} />
@@ -112,7 +112,7 @@ export default function Slide10Closing() {
           className="text-[21px] max-w-lg mb-8"
           style={{ color: 'rgba(51,51,51,0.6)', fontFamily: 'Outfit, sans-serif' }}
         >
-          Siéntete libre de preguntar sobre empaquetado, AUR o Arch Linux.
+          Siéntete libre de preguntar sobre empaquetado, contribuciones en Arch Linux o el taller de IRC.
         </motion.p>
 
         <motion.div variants={stagger} className="flex items-center gap-8">
